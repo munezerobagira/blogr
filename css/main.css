@@ -1,0 +1,183 @@
+/* import the font  */
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap");
+/* ### Neutral
+
+- White (text): hsl(0, 0%, 100%)
+- Grayish blue (footer text): hsl(240, 2%, 79%)
+- Very dark grayish blue (body copy): hsl(207, 13%, 34%)
+- Very dark black blue (footer background): hsl(240, 10%, 16%)
+
+### Gradient
+
+Background gradient - Intro/CTA mobile nav:
+
+- Very light red: hsl(13, 100%, 72%)
+- Light red: hsl(353, 100%, 62%)
+
+Background gradient - body:
+
+- Very dark gray blue: hsl(237, 17%, 21%)
+- Very dark desaturated blue: hsl(237, 23%, 32%) */
+
+/* Set the variables for colors */
+:root {
+  --red: hsl(356, 100%, 66%);
+  --dark-blue: hsl(208, 49%, 24%);
+  --light-red: hsl(355, 100%, 74%);
+  --gradient-light-red: hsl(13, 100%, 72%);
+  --gradient-red: hsl(353, 100%, 62%);
+  --gradient-body: hsl(237, 17%, 21%);
+  --gradient-body-dark: hsl(237, 23%, 32%);
+  --white: hsl(0, 0%, 100%);
+  --black-blue: hsl(240, 10%, 16%);
+  --darkest-blue: hsl(240, 10%, 16%);
+  --grayish-blue: hsl(207, 13%, 34%);
+  --font-first: "Ubuntu", sans-serif;
+  --font-second: "Overpass", sans-serif;
+  font-size: 16px;
+}
+/* reset the styles */
+* {
+  padding: 0px;
+  margin: 0px;
+}
+body {
+  /* font-family: "Overpass", sans-serif; */
+  font-family: "Ubuntu", sans-serif;
+  max-width: 100%;
+}
+header * {
+  z-index: 10;
+}
+header {
+  min-height: 600px;
+  font-size: 1.1rem;
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background: linear-gradient(
+    90deg,
+    var(--gradient-light-red),
+    var(--gradient-red)
+  );
+  flex-direction: column;
+  text-align: center;
+  border-radius: 0px 0px 0px 100px;
+  font-family: "Ubuntu";
+  overflow: hidden;
+  position: relative;
+}
+header::after {
+  content: "";
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: url(../images/bg-pattern-intro.svg) no-repeat 0px -1200px / 150%;
+}
+section#intro {
+  padding: 60px 0px;
+}
+.font-size-2 {
+  font-size: 2rem;
+}
+.font-size-3 {
+  font-size: 3rem;
+}
+#navbar {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding: 30px 0px;
+}
+.navigation {
+  width: 70%;
+  display: flex;
+  list-style: none;
+}
+.navigation .dropdown {
+  display: none;
+}
+.navlink {
+  padding: 20px;
+}
+.arrow-icon {
+  width: 15px;
+}
+
+.btn {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  border: 0px;
+  margin: 4px;
+  border-radius: 20px;
+  color: var(--white);
+  background: transparent;
+}
+.btn:active {
+  outline: 0px !important;
+  border: 0px !important;
+}
+
+.btn-primary {
+  background-color: var(--white);
+  color: var(--red);
+}
+.btn-ottline {
+}
+.intro-btn-container {
+  padding: 30px 10px;
+}
+.row {
+  width: 100%;
+  display: flex;
+}
+.w-50 {
+  width: 50%;
+  max-width: 50%;
+}
+.info-section {
+  padding: 200px 40px;
+  width: 100%;
+  overflow: hidden;
+  min-height: 20px;
+}
+.text-group {
+  padding: 20px 10px;
+  line-height: 2rem;
+  font-family: var(--font-second);
+}
+.text-group p {
+  font-size: 1.2rem;
+}
+h3 {
+  font-size: 2rem;
+  margin: 2.5rem 0px;
+}
+h2 {
+  font-size: 2.5rem;
+  margin: 3rem 0px;
+}
+h1,
+h2,
+h3 {
+  font-family: var(--font-first) !important;
+}
+.text-center {
+  text-align: center;
+}
+.img-res {
+  width: 100%;
+}
+.relative-container {
+  position: relative;
+}
+
+.info-img-half {
+  top: -200px;
+  position: relative;
+  right: -30%;
+}
