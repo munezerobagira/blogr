@@ -14,45 +14,49 @@
 
     <title>Frontend Mentor | [Blogr]</title>
     <link rel="stylesheet" href="css/main.css" />
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   </head>
   <body>
+    <!-- header section -->
     <header>
       <nav id="navbar">
-        <div class="logo">
+        <div id="logo">
           <img src="images/logo.svg" alt="Blogr logo" />
         </div>
-        <ul class="navigation">
-          <li class="navlink">
-            Product <img src="images/icon-arrow-light.svg" class="arrow-icon" />
-            <ul class="dropdown">
-              <li>Product one</li>
-              <li>Product one</li>
-              <li>Product one</li>
-            </ul>
-          </li>
-          <li class="navlink">
-            Company <img src="images/icon-arrow-light.svg" class="arrow-icon" />
-            <ul class="dropdown">
-              <li>Product one</li>
-              <li>Product one</li>
-              <li>Product one</li>
-            </ul>
-          </li>
-          <li class="navlink">
-            Connect <img src="images/icon-arrow-light.svg" class="arrow-icon" />
-            <ul class="dropdown">
-              <li>Product one</li>
-              <li>Product one</li>
-              <li>Product one</li>
-            </ul>
-          </li>
-        </ul>
-        <form id="form">
-          <button class="btn">Login</button>
-          <button class="btn btn-primary">Signup</button>
-        </form>
+        <div id="main-nav">
+          <ul class="navigation">
+            <li class="navlink">
+              Product
+              <img src="images/icon-arrow-light.svg" class="arrow-icon" />
+              <ul class="nav-dropdown">
+                <li>Product one</li>
+                <li>Product one</li>
+                <li>Product one</li>
+              </ul>
+            </li>
+            <li class="navlink">
+              Company
+              <img src="images/icon-arrow-light.svg" class="arrow-icon" />
+              <ul class="nav-dropdown">
+                <li>Product one</li>
+                <li>Product one</li>
+                <li>Product one</li>
+              </ul>
+            </li>
+            <li class="navlink">
+              Connect
+              <img src="images/icon-arrow-light.svg" class="arrow-icon" />
+              <ul class="nav-dropdown">
+                <li>Contact</li>
+                <li>Newsletter</li>
+                <li>Linkiden</li>
+              </ul>
+            </li>
+          </ul>
+          <form id="nav-form">
+            <button class="btn">Login</button>
+            <button class="btn btn-primary">Signup</button>
+          </form>
+        </div>
       </nav>
       <section id="intro">
         <h1 class="font-size-3">A mordern publishing platform</h1>
@@ -63,6 +67,8 @@
         </form>
       </section>
     </header>
+
+    <!-- main content -->
     <main>
       <section class="info-section">
         <h2 class="text-center text-blue">Designed for your future</h2>
@@ -97,7 +103,7 @@
               </p>
             </div>
           </div>
-          <div class="w-50 relative-container">
+          <div class="w-50 d-flex relative-container">
             <img
               src="images/illustration-editor-desktop.svg"
               class="info-img-half"
@@ -117,7 +123,7 @@
           </div>
           <div class="w-50">
             <div class="text-group">
-              <h3 class="text-blue">Lorem ipsum dolor sit amet</h3>
+              <h3>Lorem ipsum dolor sit amet</h3>
               <p>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi
                 porro quibusdam sit itaque qui nesciunt libero illum minima
@@ -136,6 +142,12 @@
       <section class="info-section">
         <h2 class="text-center text-blue">Designed for your future</h2>
         <div class="row">
+          <div class="w-50 d-flex relative-container">
+            <img
+              src="images/illustration-laptop-desktop.svg"
+              class="info-img-half reverse-img"
+            />
+          </div>
           <div class="w-50">
             <div class="text-group">
               <h3 class="text-blue">Lorem ipsum dolor sit amet</h3>
@@ -170,21 +182,52 @@
               </p>
             </div>
           </div>
-          <div class="w-50 relative-container">
-            <img
-              src="images/illustration-editor-desktop.svg"
-              class="info-img-half"
-            />
-          </div>
         </div>
       </section>
     </main>
-    <footer></footer>
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Sostene Munezero Bagira</a>.
-    </div>
+    <footer id="footer" class="d-flex">
+      <div class="row">
+        <div class="w-25">
+          <div id="logo">
+            <img src="images/logo.svg" alt="Blogr logo" />
+          </div>
+        </div>
+        <div class="w-25">
+          <ul class="footer-nav">
+            <h4>Product</h4>
+            <li>Overview</li>
+            <li>Pricing</li>
+            <li>Marketplace</li>
+            <li>Features</li>
+          </ul>
+        </div>
+        <div class="w-25">
+          <ul class="footer-nav">
+            <h4>Product</h4>
+            <li>Overview</li>
+            <li>Pricing</li>
+            <li>Marketplace</li>
+            <li>Features</li>
+          </ul>
+        </div>
+        <div class="w-25">
+          <ul class="footer-nav">
+            <h4>Product</h4>
+            <li>Overview</li>
+            <li>Pricing</li>
+            <li>Marketplace</li>
+            <li>Features</li>
+          </ul>
+        </div>
+      </div>
+      <div class="attribution row d-flex">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Sostene Munezero Bagira</a>.
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
   </body>
 </html>
