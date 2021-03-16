@@ -14,45 +14,49 @@
 
     <title>Frontend Mentor | [Blogr]</title>
     <link rel="stylesheet" href="css/main.css" />
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   </head>
   <body>
+    <!-- header section -->
     <header>
       <nav id="navbar">
-        <div class="logo">
+        <div id="logo">
           <img src="images/logo.svg" alt="Blogr logo" />
         </div>
-        <ul class="navigation">
-          <li class="navlink">
-            Product <img src="images/icon-arrow-light.svg" class="arrow-icon" />
-            <ul class="dropdown">
-              <li>Product one</li>
-              <li>Product one</li>
-              <li>Product one</li>
-            </ul>
-          </li>
-          <li class="navlink">
-            Company <img src="images/icon-arrow-light.svg" class="arrow-icon" />
-            <ul class="dropdown">
-              <li>Product one</li>
-              <li>Product one</li>
-              <li>Product one</li>
-            </ul>
-          </li>
-          <li class="navlink">
-            Connect <img src="images/icon-arrow-light.svg" class="arrow-icon" />
-            <ul class="dropdown">
-              <li>Product one</li>
-              <li>Product one</li>
-              <li>Product one</li>
-            </ul>
-          </li>
-        </ul>
-        <form id="form">
-          <button class="btn">Login</button>
-          <button class="btn btn-primary">Signup</button>
-        </form>
+        <div id="main-nav">
+          <ul class="navigation">
+            <li class="navlink">
+              Product
+              <img src="images/icon-arrow-light.svg" class="arrow-icon" />
+              <ul class="nav-dropdown">
+                <li>Product one</li>
+                <li>Product one</li>
+                <li>Product one</li>
+              </ul>
+            </li>
+            <li class="navlink">
+              Company
+              <img src="images/icon-arrow-light.svg" class="arrow-icon" />
+              <ul class="nav-dropdown">
+                <li>Product one</li>
+                <li>Product one</li>
+                <li>Product one</li>
+              </ul>
+            </li>
+            <li class="navlink">
+              Connect
+              <img src="images/icon-arrow-light.svg" class="arrow-icon" />
+              <ul class="nav-dropdown">
+                <li>Contact</li>
+                <li>Newsletter</li>
+                <li>Linkiden</li>
+              </ul>
+            </li>
+          </ul>
+          <form id="nav-form">
+            <button class="btn">Login</button>
+            <button class="btn btn-primary">Signup</button>
+          </form>
+        </div>
       </nav>
       <section id="intro">
         <h1 class="font-size-3">A mordern publishing platform</h1>
@@ -63,6 +67,8 @@
         </form>
       </section>
     </header>
+
+    <!-- main content -->
     <main>
       <section class="info-section">
         <h2 class="text-center text-blue">Designed for your future</h2>
@@ -97,7 +103,7 @@
               </p>
             </div>
           </div>
-          <div class="w-50 relative-container">
+          <div class="w-50 d-flex relative-container">
             <img
               src="images/illustration-editor-desktop.svg"
               class="info-img-half"
@@ -105,7 +111,9 @@
           </div>
         </div>
       </section>
-      <section class="info-section info-section-reverse darker-container">
+      <section
+        class="info-section info-section-reverse darker-container rounded-bottom"
+      >
         <div class="row">
           <div class="w-50 relative-container">
             <img
@@ -115,7 +123,7 @@
           </div>
           <div class="w-50">
             <div class="text-group">
-              <h3 class="text-blue">Lorem ipsum dolor sit amet</h3>
+              <h3>Lorem ipsum dolor sit amet</h3>
               <p>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi
                 porro quibusdam sit itaque qui nesciunt libero illum minima
@@ -131,9 +139,15 @@
           </div>
         </div>
       </section>
-      <!-- <section class="info-section">
+      <section class="info-section">
         <h2 class="text-center text-blue">Designed for your future</h2>
         <div class="row">
+          <div class="w-50 d-flex relative-container">
+            <img
+              src="images/illustration-laptop-desktop.svg"
+              class="info-img-half reverse-img"
+            />
+          </div>
           <div class="w-50">
             <div class="text-group">
               <h3 class="text-blue">Lorem ipsum dolor sit amet</h3>
@@ -168,47 +182,52 @@
               </p>
             </div>
           </div>
-          <div class="w-50 relative-container">
-            <img
-              src="images/illustration-editor-desktop.svg"
-              class="info-img-half"
-            />
+        </div>
+      </section>
+    </main>
+    <footer id="footer" class="d-flex">
+      <div class="row">
+        <div class="w-25">
+          <div id="logo">
+            <img src="images/logo.svg" alt="Blogr logo" />
           </div>
         </div>
-      </section> -->
-    </main>
-    <footer></footer>
-    <!-- Product Overview Pricing Marketplace Features Integrations Company About
-    Team Blog Careers Connect Contact Newsletter LinkedIn Login Sign Up A modern
-    publishing platform Grow your audience and build your online brand Start for
-    Free Learn More Designed for the future Introducing an extensible editor
-    Blogr features an exceedingly intuitive interface which lets you focus on
-    one thing: creating content. The editor supports management of multiple
-    blogs and allows easy manipulation of embeds such as images, videos, and
-    Markdown. Extensibility with plugins and themes provide easy ways to add
-    functionality or change the looks of a blog. Robust content management
-    Flexible content management enables users to easily move through posts.
-    Increase the usability of your blog by adding customized categories,
-    sections, format, or flow. With this functionality, you’re in full control.
-    State of the Art Infrastructure With reliability and speed in mind,
-    worldwide data centers provide the backbone for ultra-fast connectivity.
-    This ensures your site will load instantly, no matter where your readers
-    are, keeping your site competitive. Free, open, simple Blogr is a free and
-    open source application backed by a large community of helpful developers.
-    It supports features such as code syntax highlighting, RSS feeds, social
-    media integration, third-party commenting tools, and works seamlessly with
-    Google Analytics. The architecture is clean and is relatively easy to learn.
-    Powerful tooling Batteries included. We built a simple and straightforward
-    CLI tool that makes customization and deployment a breeze, but capable of
-    producing even the most complicated sites. Product Overview Pricing
-    Marketplace Features Integrations Company About Team Blog Careers Connect
-    Contact Newsletter LinkedIn -->
+        <div class="w-25">
+          <ul class="footer-nav">
+            <h4>Product</h4>
+            <li>Overview</li>
+            <li>Pricing</li>
+            <li>Marketplace</li>
+            <li>Features</li>
+          </ul>
+        </div>
+        <div class="w-25">
+          <ul class="footer-nav">
+            <h4>Product</h4>
+            <li>Overview</li>
+            <li>Pricing</li>
+            <li>Marketplace</li>
+            <li>Features</li>
+          </ul>
+        </div>
+        <div class="w-25">
+          <ul class="footer-nav">
+            <h4>Product</h4>
+            <li>Overview</li>
+            <li>Pricing</li>
+            <li>Marketplace</li>
+            <li>Features</li>
+          </ul>
+        </div>
+      </div>
+      <div class="attribution row d-flex">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Sostene Munezero Bagira</a>.
+      </div>
+    </footer>
 
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Sostene Munezero Bagira</a>.
-    </div>
+    <script src="js/main.js"></script>
   </body>
 </html>
