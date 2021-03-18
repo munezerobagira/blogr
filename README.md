@@ -65,7 +65,7 @@ background: url(../images/bg-pattern-intro.svg) no-repeat 30% 50%/ 200%, linear-
 
 About author
 
-- Website - [Sostene github page](https://sos10e.github.io)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile//sos10e)
-- Twitter - [@SosteneMunezero](https://twitter.com/SosteneMunezero)
-- Github - [@sos10e](https://www.github.com/sos10e)
+- Website - [Sosetene profile webpage](https://sos10e.github.io)
+- Frontend Mentor - [Sos10e](https://www.frontendmentor.io/profile/sos10e)
+- Twitter - [SosteneMunezero](https://twitter.com/SosteneMunezero)
+- Github - [sos10e](https://www.github.com/sos10e)
