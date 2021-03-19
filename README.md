@@ -15,7 +15,7 @@ This is a solution to the [Blogr landing page challenge on Frontend Mentor](http
 
 ## Overview
 
-Blogr is challenge by Frontend mentor to test and help you to improve you coding skill. I decided to solve it using pure HTML and CSS, and vanilla javascript.
+Blogr is challenge by Frontend mentor to test and help you to improve you coding skill. Solved it using HTML and CSS, and vanilla javascript.
 
 ### The challenge
 
