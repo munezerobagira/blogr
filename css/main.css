@@ -855,6 +855,7 @@ h1,
 h2,
 h3 {
   font-family: var(--font-second) !important;
+  line-height: 2rem;
 }
 .text-center {
   text-align: center;
