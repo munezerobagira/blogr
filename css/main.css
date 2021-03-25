@@ -40,7 +40,8 @@ body {
 }
 header {
   min-height: 40vh;
-  background: url(../images/bg-pattern-intro.svg) no-repeat 30% 50%/ 200%,
+  background: hsl(356, 100%, 66%),
+    url(../images/bg-pattern-intro.svg) no-repeat 30% 50%/ 200%,
     -webkit-gradient(linear, left top, right top, from(var(--gradient-light-red)), to(var(--gradient-red)));
   background: url(../images/bg-pattern-intro.svg) no-repeat 30% 50%/ 200%,
     -webkit-linear-gradient(left, var(--gradient-light-red), var(--gradient-red));
